@@ -2,7 +2,7 @@
 <widget id="gal.xunta.galiciaaberta" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>GaliciaAberta</name>
     <description>
-        App de GaliciaAberta - http://emigracion.xunta.gal, portal web da Secretaría Xeral da Emigración da Xunta de Galicia dirixida a emigrantes, emigrantes retornados/as e centros galegos do exterior.
+        Con esta aplicación poderase inscribir nos eventos organizados e/ou participados pola Secretaría Xeral da Emigración da Xunta de Galicia, así como recibir as actualizacións dos mesmos. Tamén, facilítase o acceso aos contidos de actualidade de interese para os/as emigrantes, emigrantes retornados/as e centros galegos do exterior.
     </description>
     <author email="marcos.suarezsanchez@plexus.es" href="http://www.tecnologiasplexus.com/">
         Plexus Technologies
