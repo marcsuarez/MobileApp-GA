@@ -1,0 +1,56 @@
+/* Loading
+/* -------------------------------------------------- */
+.loading:before {
+    content:    '';
+    display:    block;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat;
+}
+
+/* App - Listening & Received
+/* -------------------------------------------------- */
+.event.listening {
+    display: block;
+}
+.event.received {
+    display: none;
+}
+
+/* App - iframe
+/* -------------------------------------------------- */
+body {
+    margin: 0;            /* Reset default margin */
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+/* App - Offline
+/* -------------------------------------------------- */
+.app.offline {
+    display: block;
+    background: #007893;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+}
+.offline.message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 80%;
+}
