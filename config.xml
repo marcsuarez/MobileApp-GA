@@ -10,6 +10,7 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <!--<plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />-->
     <!--<plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />-->
     <!--<plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />-->
@@ -78,7 +79,6 @@
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
     </platform>
-    <preference name="SplashScreenDelay" value="10000" />
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
         <icon height="159" platform="wp8" src="www/res/icon/wp8/Background.png" width="159" />
