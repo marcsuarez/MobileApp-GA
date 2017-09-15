@@ -108,7 +108,7 @@
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
 
-    <access origin="*" />
+    <access origin="http://emigracion.xunta.gal/mobile-app" />
     <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
