@@ -24,13 +24,15 @@
 /* App - iframe
 /* -------------------------------------------------- */
 body {
-    margin: 0;            /* Reset default margin */
+    margin: 0;              /* Reset default margin */
 }
 iframe {
-    display: block;       /* iframes are inline by default */
+    display: block;         /* iframes are inline by default */
     background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat;
-    border: none;         /* Reset default border */
-    min-height: 100vh;        /* Viewport-relative units */
+    border: none;           /* Reset default border */
+    height: 100vh;          /* Viewport-relative units */
+    width: 100vw;
+    min-height: 100vh;
     min-width: 100vw;
 }
 
