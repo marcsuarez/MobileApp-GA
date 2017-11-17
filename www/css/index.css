@@ -30,8 +30,8 @@ iframe {
     display: block;       /* iframes are inline by default */
     background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat;
     border: none;         /* Reset default border */
-    height: 100vh;        /* Viewport-relative units */
-    width: 100vw;
+    height: 100vh !important;        /* Viewport-relative units */
+    width: 100vw !important;
 }
 
 /* App - Offline
