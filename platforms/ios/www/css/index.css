@@ -1,56 +1,37 @@
-/* Loading
+/* App - main
 /* -------------------------------------------------- */
-.loading:before {
-/*  content:    '';
-    display:    block;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat; *//* Fix Loading iOS */
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    margin: 0;                                  /* Reset default margin */
+    padding:0;
+    height:100%;
+    width:100%;
 }
 
-/* App - Listening & Received
+/* App - loading
 /* -------------------------------------------------- */
-.event.listening {
-/*  display: block; *//* Fix Loading iOS */
+.app .event.listening:before {
+/*  content: ''; *//* Fix loading iOS */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #007893 url('../img/loading-spin.svg') 50% 50% no-repeat;
+    background-size: 50px;
 }
-.event.received {
-/*  display: none; *//* Fix loading iOS */
+.app .event.received iframe {
+    background: #007893 url('../img/loading-spin.svg') 50% 50% no-repeat;
+    background-size: 50px;
 }
 
 /* App - iframe
 /* -------------------------------------------------- */
-body {
-    margin: 0;            /* Reset default margin */
-}
-iframe {
-    display: block;       /* iframes are inline by default */
-    background: #007893 url('../img/ajax-loader.gif') 50% 50% no-repeat;
-    border: none;         /* Reset default border */
-    height: 100vh;        /* Viewport-relative units */
+.app .event.received iframe {
+    display: block;         /* iframes are inline by default */
+    border: none;           /* Reset default border */
+    height: 100vh;          /* Viewport-relative units */
     width: 100vw;
-}
-
-/* App - Offline
-/* -------------------------------------------------- */
-.app.offline {
-    display: block;
-    background: #007893;
-    border: none;
-    width: 100vw;
-    height: 100vh;
-}
-.offline.message {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    width: 80%;
+    min-height: 100vh;
+    min-width: 100vw;
 }
