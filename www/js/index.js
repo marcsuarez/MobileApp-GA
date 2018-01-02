@@ -16,40 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-function initPushwoosh() {
-    var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
-  
-    // Should be called before pushwoosh.onDeviceReady
-    document.addEventListener('push-notification', function(event) {
-      var notification = event.notification;
-      // handle push open here
-    });
-    
-    // Initialize Pushwoosh. This will trigger all pending push notifications on start.
-    pushwoosh.onDeviceReady({
-      appid: "6EE6E-9BF27",
-      projectid: "658431314297",
-      serviceName: ""
-    });
-}
-
-pushwoosh.registerDevice(
-    function(status) {
-      var pushToken = status.pushToken;
-        // handle successful registration here
-    },
-    function(status) {
-      // handle registration error here
-    }
-);
-
-// should be called before pushwoosh.onDeviceReady
-document.addEventListener('push-notification', function(event) {
-    var notification = event.notification;
-    // handle push open here
-});
-
 var app = {
     // Application Constructor
     initialize: function() {
@@ -67,8 +33,8 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
         initPushwoosh();
+        app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
