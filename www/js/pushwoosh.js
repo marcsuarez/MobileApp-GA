@@ -11,7 +11,7 @@ function initPushwoosh() {
     pushwoosh.onDeviceReady({
       appid: "6EE6E-9BF27",
       projectid: "658431314297",
-      serviceName: "MPNS_SERVICE_NAME"
+      serviceName: ""
     });
 }
 
